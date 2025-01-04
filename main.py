@@ -48,9 +48,9 @@ async def on_ready():
                         "🍣หากคุณพบปัญหาใด ๆ กดปุ่ม 'แจ้งปัญหา' เพื่อแจ้งได้เลย!👁",
             color=discord.Color.blue()
         )
-        embed.set_image(url="https://th.bing.com/th/id/OIP.1mofGys7_n3_uhqIAkAnlgHaEK?rs=1&pid=ImgDetMain")  
+        embed.set_image(url="https://th.bing.com/th/id/OIP.1mofGys7_n3_uhqIAkAnlgHaEK?rs=1&pid=ImgDetMain")
         embed.set_footer(text="ทีมแอดมินพร้อมช่วยเหลือคุณ!")
-        embed.set_thumbnail(url="https://th.bing.com/th/id/OIP.R8NNB53byP0myVXy_bcJ9AHaD4?rs=1&pid=ImgDetMain")  
+        embed.set_thumbnail(url="https://th.bing.com/th/id/OIP.R8NNB53byP0myVXy_bcJ9AHaD4?rs=1&pid=ImgDetMain")
 
         view = TicketView()
         await channel.send(embed=embed, view=view)
@@ -137,7 +137,7 @@ class IssueReportModal(Modal):
             color=discord.Color.red()
         )
         embed.set_footer(text=f"โดย {interaction.user.name}")
-        embed.set_thumbnail(url="https://th.bing.com/th/id/OIP.R8NNB53byP0myVXy_bcJ9AHaD4?rs=1&pid=ImgDetMain")  
+        embed.set_thumbnail(url="https://th.bing.com/th/id/OIP.R8NNB53byP0myVXy_bcJ9AHaD4?rs=1&pid=ImgDetMain")
 
         await webhook.send(embed=embed)
 
